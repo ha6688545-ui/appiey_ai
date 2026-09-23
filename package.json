@@ -1,0 +1,65 @@
+
+{
+  "name": "appiey-devkit",
+  "displayName": "Appiey Centurion",
+  "description": "AI + Algorithm + Cyber intelligence for developers, built to analyze, debug, protect, and optimize your projects.",
+  "version": "0.1.0",
+  "publisher": "appiey",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "appiey.sendContext",
+        "title": "Appiey: Send Context"
+      },
+      {
+        "command": "appiey.openSidebar",
+        "title": "Appiey: Open Developer Sidebar"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "appiey",
+          "title": "Appiey"
+        }
+      ]
+    },
+    "views": {
+      "appiey": [
+        {
+          "id": "appiey.sidebar",
+          "name": "Developer Assistant",
+          "type": "webview"
+        }
+      ]
+    },
+    "configuration": {
+      "properties": {
+        "appiey.apiUrl": {
+          "type": "string",
+          "default": "http://localhost:8000",
+          "description": "Appiey Algorithm API URL"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.0.0"
+  }
+}
