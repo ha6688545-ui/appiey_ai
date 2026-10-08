@@ -1,0 +1,11 @@
+{
+  "name": "centurion-ide-sidebar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Centurion IDE sidebar UI: action approvals and chat. Vanilla HTML, CSS and JS.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "npx serve src"
+  },
+  "license": "UNLICENSED"
+}

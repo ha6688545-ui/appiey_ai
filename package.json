@@ -1,19 +1,30 @@
-
 {
-  "name": "appiey-devkit",
+  "name": "appiey-centurion",
   "displayName": "Appiey Centurion",
-  "description": "AI + Algorithm + Cyber intelligence for developers, built to analyze, debug, protect, and optimize your projects.",
+  "description": "Appiey Centurion is a complete tech stack development autonomous solution that works with your tech stack to strengthen it, optimize it, and maintain it end to end.",
   "version": "0.1.0",
   "publisher": "appiey",
+  "license": "SEE LICENSE IN LICENSE",
+  "icon": "images/Centurion.png",
+  "homepage": "https://appiey.com",
+  "keywords": [
+    "ai",
+    "coding assistant",
+    "ai assistant",
+    "chat",
+    "cyber security",
+    "security",
+    "debug",
+    "optimize",
+    "devops",
+    "code review",
+    "autonomous"
+  ],
   "engines": {
     "vscode": "^1.85.0"
   },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [
-    "onStartupFinished"
-  ],
+  "categories": ["AI", "Chat", "Other"],
+  "activationEvents": ["onStartupFinished"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
@@ -23,14 +34,15 @@
       },
       {
         "command": "appiey.openSidebar",
-        "title": "Appiey: Open Developer Sidebar"
+        "title": "Appiey: Open Centurion"
       }
     ],
     "viewsContainers": {
       "activitybar": [
         {
           "id": "appiey",
-          "title": "Appiey"
+          "title": "Appiey Centurion",
+          "icon": "images/Activity-Bar.svg"
         }
       ]
     },
@@ -38,27 +50,20 @@
       "appiey": [
         {
           "id": "appiey.sidebar",
-          "name": "Developer Assistant",
-          "type": "webview"
+          "name": "Centurion",
+          "type": "webview",
+          "icon": "images/Activity-Bar.svg"
         }
       ]
-    },
-    "configuration": {
-      "properties": {
-        "appiey.apiUrl": {
-          "type": "string",
-          "default": "http://localhost:8000",
-          "description": "Appiey Algorithm API URL"
-        }
-      }
     }
   },
   "scripts": {
-    "compile": "tsc -p ./",
+    "vscode:prepublish": "npm run compile",
+    "compile": "node -e \"const fs=require('fs'),path=require('path');const o=path.join(__dirname,'out');if(fs.existsSync(o))fs.rmSync(o,{recursive:true})\" && tsc -p ./",
     "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
-    "@types/node": "^26.5.1",
+    "@types/node": "^20.0.0",
     "@types/vscode": "^1.85.0",
     "typescript": "^5.0.0"
   }

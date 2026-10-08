@@ -3,14 +3,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.sendToAppiey = sendToAppiey;
 exports.sendIdeRequest = sendIdeRequest;
 exports.sendDecision = sendDecision;
+exports.sendActionResult = sendActionResult;
 async function sendToAppiey(apiUrl, context) {
     return sendIdeRequest(apiUrl, { context });
 }
 async function sendIdeRequest(apiUrl, request) {
-    return postJson(apiUrl, "/v1/ide/debug", request);
+    return postJson(apiUrl, "/v1/ide/request", request);
 }
 async function sendDecision(apiUrl, request) {
     return postJson(apiUrl, "/v1/ide/decision", request);
+}
+async function sendActionResult(apiUrl, request) {
+    return postJson(apiUrl, "/v1/ide/action_result", request);
 }
 async function postJson(apiUrl, path, request) {
     const response = await fetch(`${apiUrl}${path}`, {

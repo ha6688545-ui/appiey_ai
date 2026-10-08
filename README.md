@@ -1,33 +1,33 @@
 # Appiey Centurion
 
-> AI + Algorithm + Cyber intelligence, built into your IDE.
+Introducing Centurion. The Autonomous Tech Stack Intelligence by Appiey Technologies
 
-Powered by **Appiey Technologies** — an AI and algorithm-based system that integrates with your IDE to help you write better code, optimize your tech stack, and improve the overall performance of your software and apps.
+Centurion is a fully autonomous IDE extension that connects directly to your tech stack and analyzing, optimizing, and hardening it end to end. Whether you're building web apps, mobile apps, or enterprise software, Centurion helps you write better code, eliminate performance bottlenecks, and close security vulnerabilities before they become threats. Powered by Appiey and cybersecurity intelligence, Centurion doesn't just assist, it actively strengthens and protects your entire stack from the inside out.
 
 ---
 
 ## Features
 
-- 🤖 **AI Assistance** — Intelligent code analysis and suggestions powered by Appiey AI
-- ⚙️ **Algorithm Engine** — Deep optimization insights for your codebase and tech stack
-- 🛡️ **Cyber Intelligence** — Security-aware development tools to protect your projects
-- 📊 **Performance Analysis** — Real-time feedback to improve app and software performance
-- 🧠 **Developer Sidebar** — Unified assistant panel built directly into your IDE
+1. AI-Powered Code Intelligence — Context-aware code analysis, suggestions, and autonomous assistance powered by Appiey AI
+2. Algorithm Engine — Deep algorithmic insights that identify inefficiencies and optimize your codebase at the structural level
+3. Cyber Intelligence — Built-in security awareness that detects vulnerabilities and hardens your tech stack against threats
+4. Performance Analysis — Real-time diagnostics across your full stack — from runtime bottlenecks to architectural weak points
+5. Stack Connectivity — Seamlessly connects to your existing apps, web apps, and software without disrupting your workflow
+6. Centurion Sidebar — A unified, always-available intelligence panel embedded directly into your IDE — no context switching
 
 ---
 
 ## Getting Started
 
-1. Install **Appiey Centurion** from the VS Code Marketplace
-2. Open the **Appiey** panel from the Activity Bar
-3. Configure your API URL in Settings if needed
-4. Start building smarter
-
+1. Install Appiey Centurion from the VS Code Marketplace or Open VSX Registry
+2. Click the Centurion icon in the Activity Bar to open the intelligence panel
+3. Connect your stack — Centurion automatically detects your project environment
+4. Start building smarter, faster, and more securely
 ---
 
 ## About Appiey Technologies
 
-Appiey is a global AI tech company building intelligent tools for developers, merchants, and businesses. Appiey Centurion is part of the Appiey developer ecosystem.
+Appiey Technologies is a global technology company engineering intelligent, autonomous solutions for developers, startups, and enterprises worldwide. Centurion is a flagship product of the Appiey developer ecosystem and purpose-built to bring AI, algorithmic intelligence, and cybersecurity into a single, unified development experience.
 
 [appiey.com](https://appiey.com)
 
@@ -35,4 +35,5 @@ Appiey is a global AI tech company building intelligent tools for developers, me
 
 ## License
 
-MIT
+Proprietary — All Rights Reserved
+This extension is the intellectual property of Appiey Technologies. Unauthorized use, modification, or distribution is strictly prohibited. Centurion is currently in active training and development.

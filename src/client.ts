@@ -9,7 +9,7 @@ export async function sendIdeRequest(
   apiUrl: string,
   request: unknown
 ): Promise<unknown> {
-  return postJson(apiUrl, "/v1/ide/debug", request);
+  return postJson(apiUrl, "/v1/ide/request", request);
 }
 
 export async function sendDecision(
@@ -17,6 +17,13 @@ export async function sendDecision(
   request: unknown
 ): Promise<unknown> {
   return postJson(apiUrl, "/v1/ide/decision", request);
+}
+
+export async function sendActionResult(
+  apiUrl: string,
+  request: unknown
+): Promise<unknown> {
+  return postJson(apiUrl, "/v1/ide/action_result", request);
 }
 
 async function postJson(
